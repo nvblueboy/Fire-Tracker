@@ -56,8 +56,12 @@ def parseXML(rssData):
     return output
 
 if __name__ == "__main__":
+    import distanceFilter
+    from config import config
     rssData = getRSSData()
 
-    for fire in parseXML(rssData)[:5]:
-        print(fire.formatAsHtml())
+    fires = distanceFilter.filter(parseXML(rssData))
+
+    for fire in fires:
         print(fire)
+      

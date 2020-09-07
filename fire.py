@@ -15,7 +15,7 @@ class Fire:
         output = ""
         output += "title:" + self.title + "\n"
         output += "published:" + self.published + "\n"
-        output += "pubdate:" + datetime.strftime(self.pubdate, '%d/%m/%Y') + "\n"
+        output += "pubdate:" + datetime.strftime(self.pubdate, '%m/%d/%Y') + "\n"
         output += "lat:" + str(self.lat) + "\n"
         output += "long:" + str(self.long) + "\n"
         output += "link:" + self.link + "\n"
