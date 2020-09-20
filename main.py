@@ -6,5 +6,7 @@ from fire import Fire
 if __name__ == "__main__":
     fires = inciweb.getFires()
 
-    for fire in fires:
+    filteredFires = distanceFilter.filter(fires)
+
+    for fire in filteredFires:
         print(fire)
