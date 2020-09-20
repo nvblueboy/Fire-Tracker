@@ -24,3 +24,8 @@ class config:
         self.distance = jsondata["distance"]
         self.email = jsondata["email"]
         self.days = jsondata["days"]
+        self.email_sender = jsondata["email"]["smtp"]["sender"]
+        self.smtp_server = jsondata["email"]["smtp"]["server"]
+        self.smtp_user = jsondata["email"]["smtp"]["username"]
+        self.smtp_pass = jsondata["email"]["smtp"]["password"]
+        self.addresses = jsondata["email"]["addresses"]

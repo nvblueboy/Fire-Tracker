@@ -55,6 +55,9 @@ def parseXML(rssData):
 
     return output
 
+def getFires():
+    return parseXML(getRSSData())
+
 if __name__ == "__main__":
     import distanceFilter
     from config import config
